@@ -1,0 +1,209 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing :border-box;
+    font-family: "Poppins", sans-serif;
+    cursor : pointer;
+}
+body{
+    min-height : 100vh;
+    width: 100%;
+}
+header{
+    position: fixed;
+    top : 0;
+    left : 0;
+    width: 100%;
+    padding : 20px 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size : 40px;
+    color : white;
+    text-decoration: none;
+    font-weight : 700;
+}
+header .menu{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a{
+    position : relative;
+    font-size: 1.1em;
+    color : white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navbar a::after{
+    content : '';
+    position: absolute;
+    left : 0;
+    bottom : -6px;
+    width : 100%;
+    height : 3px;
+    background : white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+.navbar a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navbar .btnLogin-popup{
+    width : 110px;
+    height : 50px;
+    background : transparent;
+    cursor : pointer;
+    font-size : 1.1em;
+    color : white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+.navbar .btnLogin-popup:hover{
+    background-color: white;
+}
+.navbar .btnLogin-popup:hover a{
+    color : black;
+}
+.hero{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../5.jpg");
+}
+.h2{
+    color : white;
+    font-weight: 800;
+    font-size : 250px;
+}
+.container{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.leadpara
+{
+    color : black;
+    font-size : 35px;
+    font-weight: 700;
+}
+.buy{
+    display : flex;
+    justify-content: center;
+    margin-top : 50px;
+}
+.buy a{
+    align-items: center;
+    border-radius: 20px;
+}
+/* .box{
+    display : flex;
+    align-items: center;
+    flex-direction: column;
+}
+.para{
+    font-size : 25px;
+    font-weight: 500;
+}
+.tit{
+    font-size : 70px;
+    font-weight : 1000;
+}
+.shop{
+    background-color: #000;
+    border-radius: 100px;
+    align-items: center;
+    flex-direction: column;
+    width : 150px;
+    height : 38px;
+    a{
+        color : white;
+        font-size : 27px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
+.shop:hover{
+    transition : 0.2s;
+    background-color: darkslategray;
+} */
+
+.tieude{
+    h2{
+        margin : 25px;
+    }
+}
+.p{
+    font-size: 20px;
+    font-weight : 600;
+}
+.the{
+    display : flex;
+    justify-content: space-around;
+    
+    margin-top : 20px;
+}
+.text{
+    font-weight : 500;
+}
+.active{
+    height : 900px;
+    padding : 25px;
+    img{
+        width : 100%;
+    }
+}
+.card{
+    margin : 15px;
+    width : 200px;
+    transition : 0.4s;
+    box-shadow :0px 14px 28px rgba(0, 0, 0, 0.25);
+    cursor : pointer;
+    width : 700px;
+}
+.card:hover{
+    box-shadow : 0 3px 6px rgba(0,0,0,0.16); 
+    transform: translate(0,-8px);
+    cursor : pointer;
+}
+.text1 a:hover{
+    color :burlywood;
+    transition : 0.2s;
+    cursor : pointer;
+}
+.text1 a{
+    text-decoration: none;
+    color : black;
+}
+@media only screen and (max-width : 768px)
+{
+    .logo{
+        margin-left : 250px;
+    }
+    .navbar{
+        display : none;
+    }
+
+    .carousel-item{
+        img{
+            width : 100%;
+        }
+    }
+    .foot{
+        display : none;
+    }
+    .card{
+        width : 1100px;
+        height : 330px;
+    }
+}

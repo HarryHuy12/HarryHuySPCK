@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signin</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/dangnhap.css" />
+  </head>
+  <body>
+    <form id="login-form">
+      <div class="login-box">
+        <div class="login-header">
+          <p>Log in</p>
+        </div>
+
+        <div class="input-box">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Email"
+            autocomplete="off"
+            required
+            id = "email"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Password"
+            autocomplete="off"
+            required
+            id = "password"
+          />
+        </div>
+
+        <div class="forgot">
+          <section>
+            <input type="checkbox" id="check" />
+            <label for="check">Remember me</label>
+          </section>
+          <section>
+            <a href="#">Forgot password</a>
+          </section>
+        </div>
+        <div class="input-submit">
+          <button class="submit-btn" id="submit"></button>
+          <label for="submit">Sign in</label>
+        </div>
+        <div class="sign-up-link">
+          <p>Don't have an account? <a href="./dangki.html">Sign up</a></p>
+        </div>
+      </div>
+    </form>
+    <script src="./js/dangnhap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/dangki.css">
+</head>
+<body>
+    <form id="signup-form">
+        <div class = "login-box">
+            <div class = "login-header">
+                <p>Sign up</p>
+            </div>
+
+            <div class = "input-box">
+                <input type="text" class = "input-field" placeholder ="Full name" autocomplete="off" required id="userName">
+            </div>
+            <div class = "input-box">
+                <input type="text" class = "input-field" placeholder ="Phone number" autocomplete="off" required id="phoneNumber">
+            </div>
+            <div class = "input-box">
+                <input type="text" class = "input-field" placeholder ="Email" autocomplete="off" required id = "email">
+            </div>
+            <div class = "input-box">
+                <input type="password" class = "input-field" placeholder ="Password" autocomplete="off" required id = "password">
+            </div>
+            <div class = "input-box">
+                <input type="password" class = "input-field" placeholder ="Confirm password" autocomplete="off" required id = "confirmPassword">
+            </div>
+            
+            <div class = "forgot">
+                <section>
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </section>
+                <section>
+                    <a href="#">Forgot password</a>
+                </section>
+            </div>
+            <div class = "input-submit">
+                <button class = "submit-btn" id = "submit" type="submit"></button>
+                <label for="submit">Sign up</label>
+            </div>
+        </div>
+    </form>
+    <script src = "./js/dangki.js"></script>
+</body>
+</html>
