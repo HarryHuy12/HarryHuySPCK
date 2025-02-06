@@ -50,7 +50,7 @@ async function getKitchenItem(url) {
           </div>
 
           <div class = "add">
-            <h3><button><a href="./payment.html">Add to cart</a></button></h3>
+            <h3><button><a href="./payment.html">Checkout</a></button></h3>
           </div>
   
         </div>

@@ -26,16 +26,16 @@ function showShoes(data) {
 
 function searchShoes() 
 {
-  let valueSearch = document.getElementById("search").value;
-  fetch(url)
+  let valueSearch = document.getElementById("search").value; /* lấy thông tin của người dùng nhập vào */
+  fetch(url)//lấy dữ liệu từ url
   .then(response => response.json())
   .then(data => {
     let productSearch = data.filter(value => {
-      return value.Name.toLowerCase().includes(valueSearch.toLowerCase());
+      return value.Name.toLowerCase().includes(valueSearch.toLowerCase());//tìm kiếm theo tên sản phẩm
     });
     document.getElementById("showShoes").innerHTML = '';
     let product = '';
-    productSearch.map(value=> product += `<div class="card" style="width: 35rem; height : 44rem;">
+    productSearch.map(value=> product += `<div class="card" style="width: 35rem; height : 44rem;"> //hiển thị sản phẩm tìm kiếm
         <img src="${value.Image}">
         <div class="card-body">
           <h5 class="card-title">${value.Name}</h5>
