@@ -116,6 +116,11 @@ header{
     transition: 0.4s;
     background-color: grey;
 }
+.pa{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
 footer{
     background-color: black;
     margin-top : 200px;

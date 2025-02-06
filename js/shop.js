@@ -11,6 +11,7 @@ function showShoes(data) {
   const showShoes = document.getElementById("showShoes");
   for (let i = 0; i < data.length; i++) {
     showShoes.innerHTML += `
+    <a href="./detail.html?id=${data[i].id}" style="text-decoration: none;">
     <div class="card" style="width: 35rem; height : 44rem;">
         <img src="${data[i].Image}">
         <div class="card-body">
@@ -18,6 +19,7 @@ function showShoes(data) {
           <p class="text">${data[i].Price}</p> 
         </div>
       </div>
+      </a>
         `;
   }
 }
